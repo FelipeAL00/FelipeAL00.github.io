@@ -1,0 +1,29 @@
+body {
+  background-color: #eee;
+  font-family: Roboto, sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.image {
+  max-width: 30px;
+  width: 100%;
+}
+
+.profile {
+  height: auto;
+  width: 100%;
+  max-width: 200px;
+  max-height: 180px;
+  border-radius: 50%;
+  border: 2px solid #343a40;
+}
+
+a{
+  list-style: none;
+  text-decoration: none;
+  color: #343a40;
+}

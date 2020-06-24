@@ -1,11 +1,247 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <!-- Icones feito por -->
+  <link rel="shortcut icon"
+    href="./assets/image/github-logo.png" type="image/x-icon">
+  <!-- Bootstrap Css import -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+  <title>Meu Portifólio</title>
 </head>
+
 <body>
-  <h1>Hello World</h1>
+  <header>
+    <nav class="navbar fixed-top navbar-dark navbar-expand-lg bg-dark">
+      <a class="navbar-brand" href="#home">Felipe Almeida da Silva</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+
+        </ul>
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link " href="#home">Home</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link " href="#trabalhos">Trabalhos</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link " href="#sobre">Sobre Mim</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link " href="#contatos">Contatos</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <!-- home de apresentação -->
+    <div role="main" id="home">
+      <section class="jumbotron text-center bg-light">
+        <div class="container">
+          <img class="profile" src="./assets/image/profile.jpeg" alt="Minha Foto" />
+          <h1>Felipe Almeida da Silva</h1>
+          <p class="lead text-muted">Analista de Testes Trainee - Estudante de Desenvolvimento de Software - Node.js e
+            React
+            Native/React.js</p>
+          <div class="d-flex justify-content-center align-items-center">
+            <a href="#sobre" class="btn btn-outline-primary my-2 btn-block" style="max-width: 500px; width: 100%;">Ver
+              Mais</a>
+          </div>
+          <a href="https://www.linkedin.com/in/felipe-almeida-da-silva-34a114150/">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="https://github.com/FelipeAL00">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://www.facebook.com/FelipeAL00">
+            <i class="fab fa-facebook"></i>
+          </a>
+        </div>
+      </section>
+    </div>
+    <!-- meus trabalhos no github -->
+    <div class="album py-5 bg-light" id="trabalhos">
+      <div class="container text-center">
+        <h2 class="mb-4">Trabalhos</h2>
+        <div class="row text-left">
+          <div class="col-md-6 md-auto">
+            <div class="card mb-4 box-shadow">
+              <img class="card-img-top"
+                data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                alt="image_project" style="height: 225px; width: 100%; display: block;"
+                src="./assets/image/casualls.png" data-holder-rendered="true">
+              <div class="card-body">
+                <h5 class="card-title">CasuAlls</h5>
+                <p class="card-text">Feito em React.js utilizando Redux como principal característica, a
+                  ideia é uma loja voltada para sapatos da marca Converse All Stars.
+                </p>
+                <p class="card-text">Tecnologias utilizadas:
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">React.js</li>
+                  <li class="list-group-item">Json-Server</li>
+                  <li class="list-group-item">Javascript</li>
+                  <li class="list-group-item">Styled-Components</li>
+                </ul>
+                </p>
+
+                <div class="d-flex justify-content-center align-items-center">
+                  <a type="button" class="btn btn-outline-primary btn-block m-auto"
+                    href="https://github.com/FelipeAL00/CasuAlls-react">Código</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 md-auto">
+            <div class="card mb-4 box-shadow ">
+              <img class="card-img-top"
+                data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                alt="image_project" style="height: 225px; width: 100%; display: block;"
+                src="./assets/image/react-native.png" data-holder-rendered="true">
+              <div class="card-body">
+                <h5 class="card-title">Busca de API GitHub</h5>
+                <p class="card-text">Feito em React.Native, a
+                  ideia é pesquisar usuários do GitHub e automaticamente trazer seus dados e seus projetos favoritos
+                </p>
+                <p class="card-text">Tecnologias utilizadas:
+                <ul class="list-group list-group-flush m-auto">
+                  <li class="list-group-item">React.Native</li>
+                  <li class="list-group-item">Javascript</li>
+                  <li class="list-group-item">Styled-Components</li>
+                  <li class="list-group-item">Axios</li>
+                </ul>
+                </p>
+                <div class="d-flex justify-content-center align-items-center m-auto">
+                  <a type="button" class="btn btn-outline-primary btn-block m-auto"
+                    href="https://github.com/FelipeAL00/PesquisandoAPIsReactNative">Código</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 md-auto">
+            <div class="card mb-4 box-shadow ">
+              <img class="card-img-top"
+                data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                alt="image_project" style="height: 225px; width: 100%; display: block;"
+                src="https://miro.medium.com/max/1200/0*ggE6W4KOacza5qNF.jpg" data-holder-rendered="true">
+              <div class="card-body">
+                <h5 class="card-title">Go Barber Back-end</h5>
+                <p class="card-text">Feito em Node.js, é o back-end de uma aplicação para controle de barbearia, usando
+                  diversas tecnologias.</p>
+                <p class="card-text">Tecnologias utilizadas:
+                <ul class="list-group list-group-flush m-auto">
+                  <li class="list-group-item">Node.js</li>
+                  <li class="list-group-item">Javascript</li>
+                  <li class="list-group-item">Sequelize</li>
+                  <li class="list-group-item">PostGreSQL</li>
+                </ul>
+                </p>
+                <div class="d-flex justify-content-center align-items-center m-auto">
+                  <a type="button" class="btn btn-outline-primary btn-block m-auto"
+                    href="https://github.com/FelipeAL00/go-barber-back-end">Código</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 md-auto">
+            <div class="card mb-4 box-shadow ">
+              <img class="card-img-top"
+                data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                alt="image_project" style="height: 225px; width: 100%; display: block;"
+                src="./assets/image/react-livraria.png" data-holder-rendered="true">
+              <div class="card-body">
+                <h5 class="card-title">Livraria MB - Colab: @joaobru </h5>
+                <p class="card-text">Feito em React.js, é uma livraria digital, feita em colaboração com João Paulo
+                  Brune, GitHub: @joaobru.</p>
+                <p class="card-text">Tecnologias utilizadas:
+                <ul class="list-group list-group-flush m-auto">
+                  <li class="list-group-item">React.js</li>
+                  <li class="list-group-item">Javascript</li>
+                  <li class="list-group-item">Mobile First</li>
+                  <li class="list-group-item">JQuery</li>
+                </ul>
+                </p>
+                <div class="d-flex justify-content-center align-items-center m-auto">
+                  <a type="button" class="btn btn-outline-primary btn-block m-auto"
+                    href="https://github.com/FelipeAL00/ProjetoReactLivraria">Código</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- sobre mim -->
+    <div class="bg-light mt-4" id="sobre">
+      <section class=" jumbotron text-center bg-light">
+        <div class="container">
+          <h2 class="heading bg-light mb-4">Sobre mim</h2>
+          <p class="lead">
+            Sou o Felipe, estou no mercado de tecnologia cerca de 6 meses, trabalho atualmente como Analista de Testes,
+            na RSI informática. Estudo atualmente Node.js e React.js, desejo migrar para a área de desenvolvimento de
+            sistemas, mais precisamente para Web/Mobile em JS
+          </p>
+
+          <p class="lead"> Gostaria do meu currículo ?</p>
+          <div class="d-flex justify-content-center align-items-center">
+            <a type="button" class="btn btn-outline-primary btn-block m-auto"
+              href="./assets/curriculo/FELIPE_ALMEIDA.pdf" style="max-width: 500px; width: 100%;">Clique Aqui</a>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- contatos -->
+    <div class="bg-light mt-4" id="contatos">
+      <section class="jumbotron text-center bg-light">
+        <div class="container-fluid">
+          <h2 class="heading bg-light mb-4">Contatos</h2>
+          <p class="lead ">
+            Estou aberto a oportunidades, fale comigo através:
+          </p>
+          <div style="padding: 5px; font-size: small;">
+            <i class="fab fa-whatsapp"></i> (11) 95370.1433
+            <br>
+            <i class="fab fa-google"></i> felipe.almeidaa14@gmail.com
+            <br>
+            <a href="https://www.linkedin.com/in/felipe-almeida-da-silva-34a114150/">
+              <i class="fab fa-linkedin"></i> Felipe Almeida da Silva
+            </a>
+            <br>
+            <a href="https://github.com/FelipeAL00">
+              <i class="fab fa-github"></i> @FelipeAL00
+            </a>
+            <br>
+            <a href="https://www.facebook.com/FelipeAL00">
+              <i class="fab fa-facebook"></i> @FelipeAL00 ou Felipe Almeida
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+  <!-- Bootstrap Javascript Import -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/0d8611614f.js" crossorigin="anonymous"></script>
 </body>
+
 </html>
